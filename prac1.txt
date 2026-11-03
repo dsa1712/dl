@@ -1,0 +1,39 @@
+#python -m pip install tensorflow
+#python -m pip install keras
+#python -m pip install Theano-PyMc
+#python -m pip install torch torchvision torchaudio
+
+# TensorFlow
+try:
+    import tensorflow as tf
+    print("TensorFlow Version:", tf.__version__)
+except Exception as e:
+    print("TensorFlow Error:", e)
+
+
+# Keras
+try:
+    import keras
+    print("Keras Version:", keras.__version__)
+except Exception as e:
+    print("Keras Error:", e)
+
+
+# Theano
+try:
+    import theano
+    print("Theano Version:", theano.__version__)
+except Exception as e:
+    print("Theano Not Available:", e)
+
+
+# PyTorch
+try:
+    import torch
+    print("PyTorch Version:", torch.__version__)
+    print("CUDA Available:", torch.cuda.is_available())
+except Exception as e:
+    print("PyTorch Not Available:", e)
+
+
+print("\nDeep Learning Package Checking Completed!")
